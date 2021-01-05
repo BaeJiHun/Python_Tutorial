@@ -1,4 +1,6 @@
 # 클래스 init, 멤버변수, 메소드, 상속
+import matplotlib.pyplot as plt
+from matplotlib.image import imread
 
 class unit:
     def __init__(self,name,hp,damage):        #init: 초기변수 #name, hp, damage : 멤버변수
@@ -23,7 +25,13 @@ class attackunit:
         print("{0}이 {1}에게 {2}의 데미지를 주었습니다.".format(self.name, name, self.damage))
         print("{0}이 {1}에게 {2}의 데미지를 주었습니다.".format(self.name, name, self.damage))
         print("{0}이 {1}에게 {2}의 데미지를 주었습니다.".format(self.name, name, self.damage))
+        img = imread('47859.jpg')
+        plt.imshow(img)
+        plt.show()
         print("{0}은 파괴되었습니다.".format(name))
+        img2 = imread('maxresdefault.jpg')
+        plt.imshow(img2)
+        plt.show()
 
     def damaged(self,name,damage):              #메소드: damaged
         self.hp -= damage
