@@ -13,6 +13,7 @@ unit1 = unit("마린", 50, 5)
 unit2 = unit("탱크", 150, 35)
 unit3 = unit("레이스", 80, 10)
 
+
 class attackunit:
     def __init__(self,name,hp,damage):        #init: 초기변수 #name, hp, damage : 멤버변수
         self.name = name
@@ -39,6 +40,13 @@ class attackunit:
         print("{0}의 현재 남은 체력은 {1} 입니다.".format(self.name, self.hp))
         if self.hp <= 0:
             print("{0} 유닛은 파괴되었습니다.".format(self.name))
+
+    def attack_time(self, damage, time):
+        damage = round(damage / time)
+
+    def attack_visualization(self, damage, time, loca):
+        plt.imshow(str(damage))
+        
 
 
 unit4 = attackunit("파이어뱃", 50, 16)
