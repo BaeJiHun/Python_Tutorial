@@ -1,4 +1,4 @@
-# # substraction
+#  substraction
 import random
 
 number1 = random.randint(0,9)
@@ -30,7 +30,7 @@ else:
 
 print(grade)
 
-ComputeBMI
+#ComputeBMI
 
 weight = eval(input("몸무게를 입력하세요:"))
 height = eval(input("키를 입력하세요:"))
@@ -53,7 +53,7 @@ else:
     print("비만입니다")
 
 
-세금계산하기 (2009, US)
+#세금계산하기 (2009, US)
 statue = eval(input("0 - 1인세대주" + "1 - 부부공동신고\n" +
                     "2 - 부부개별신고" + "3- 세대주\n"+
                     "납세자 구분:"))
@@ -126,7 +126,7 @@ else:
 
 print(round(tax,2))
 
-로또 당첨
+#로또 당첨
 import random
 
 win_number = random.randint(10,99)
@@ -149,7 +149,7 @@ elif win_number_10digits == guess_number_10digits or win_number_10digits == gues
 else:
     print("꽝")
 
-이차방정식 근 구하기
+#이차방정식 근 구하기
 a,b,c = eval(input("a,b,c를 입력하세요:"))
 
 r1 = (-b + (b**2-4*a*c)**0.5) / 2*a
