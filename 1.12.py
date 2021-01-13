@@ -155,6 +155,3 @@ while count != number_of_question:
 endTime = time.time()
 Total_time = int(endTime - starttime)
 print("정답의 개수는 {0} 개중 {1}개 입니다. 수행시간은 {2}초 입니다.".format(number_of_question, correct_answer, Total_time))
-
-
-
