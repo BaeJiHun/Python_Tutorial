@@ -52,9 +52,3 @@ def sumDigits(n):
 answer = eval(input("하나의 정수를 입력하세요:"))
 print(sumDigits(answer))
 
-
-
-
-
-
-
